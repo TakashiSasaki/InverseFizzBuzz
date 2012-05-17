@@ -60,4 +60,13 @@ object MyApplication extends Application {
   Console.println("r2 = " + r2)
   Console.println("r3 = " + r3)
   Console.println("r4 = " + r4)
+
+  //単行演算子を使ってみる
+  Console.println(r4.toString() + " , " + (~r4).toString())
+
+  //単純な型推論
+  var r5 = new Rational(3, 4)
+  r5 += r1
+  Console.println("r5 = " + r5)
+
 }
